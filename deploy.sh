@@ -14,10 +14,10 @@ echo 'bfrontend.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:webxmsj/webxmsj-blog.git
+  githubUrl=git@github.com:webxmsj/webxmsj.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://webxmsj:${GITHUB_TOKEN}@github.com/webxmsj/webxmsj-blog.git
+  githubUrl=https://webxmsj:${GITHUB_TOKEN}@github.com/webxmsj/webxmsj.github.io.git
   git config --global user.name "webxmsj"
   git config --global user.email "heartdream1994@gmail.com"
 fi
