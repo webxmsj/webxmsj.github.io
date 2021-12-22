@@ -232,9 +232,9 @@ module.exports = {
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'webxmsj-blog', // GitHub 仓库
+          clientID: 'c43ba2644524cd653f5b',
+          clientSecret: '67168253769d504d663de3cb7b8409853430c11a',
+          repo: 'webxmsj.github.io', // GitHub 仓库
           owner: 'webxmsj', // GitHub仓库所有者
           admin: ['webxmsj'], // 对仓库有写权限的人
           // distractionFreeMode: true,
