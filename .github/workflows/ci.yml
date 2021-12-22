@@ -49,4 +49,4 @@ jobs:
         with:
           gitee-username: webxmsj
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          giee-repo: webxmsj/webxmsj.gitee.io
+          gitee-repo: webxmsj/webxmsj.gitee.io
