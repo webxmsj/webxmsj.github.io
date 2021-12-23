@@ -2,8 +2,7 @@ const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
-  theme: 'vdoing', // 使用npm包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "webxmsj's blog",
   description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
@@ -70,8 +69,6 @@ module.exports = {
     editLinks: false, // 启用编辑
     editLinkText: '编辑',
 
-    //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
-
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
     // archive: false, // 是否打开归档功能，默认true
@@ -110,12 +107,11 @@ module.exports = {
 
     // 博主信息，显示在首页侧边栏
     blogger: {
-      avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: 'https://imgoss.bfrontend.com/uPic/20200103123203.jpg',
       name: 'webxmsj',
       slogan: '前端界的划水哥',
     },
 
-    // 社交图标，显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social
     social: {
       iconfontCssFile: '//at.alicdn.com/t/font_3047792_yl1ut1sbqe.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加
       icons: [
@@ -145,7 +141,7 @@ module.exports = {
     },
 
     // 插入hmtl(广告)模块
-    // htmlModules
+    htmlModules
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
