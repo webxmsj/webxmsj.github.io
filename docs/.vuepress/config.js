@@ -42,7 +42,7 @@ module.exports = {
         items: [
           { text: '生活', link: '/pages/e60c81/' },
           { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
+          // { text: '友情链接', link: '/friends/' },
         ],
       },
       { text: '关于', link: '/about/' },
