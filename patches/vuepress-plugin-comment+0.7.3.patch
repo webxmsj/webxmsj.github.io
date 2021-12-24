@@ -1,0 +1,17 @@
+diff --git a/node_modules/vuepress-plugin-comment/util.js b/node_modules/vuepress-plugin-comment/util.js
+index d1e5abe..1ae3c72 100644
+--- a/node_modules/vuepress-plugin-comment/util.js
++++ b/node_modules/vuepress-plugin-comment/util.js
+@@ -5,12 +5,6 @@ import config from './package.json'
+ let Gitalk, Valine
+ loadScript(COMMENT_CHOOSEN)
+ 
+-const defaultChoosen = 'comment plugins'
+-console.log(
+-  `How to use "${COMMENT_CHOOSEN || defaultChoosen}" in ${config.name}@v${config.version}:`,
+-  config.homepage
+-)
+-
+ /**
+  * Lazy load pkg
+  * 
