@@ -36,7 +36,7 @@ else
   codingMsg='来自github actions的自动部署'
   codingUrl=https://zXeMBYHXuv:${CODING_TOKEN}@e.coding.net/webxmsj-01/webxmsj-blog/webxmsj.git
 fi
-echo pwd
+pwd
 git add -A
 git commit -m "${codingMsg}"
 git push -f $codingUrl master:master
