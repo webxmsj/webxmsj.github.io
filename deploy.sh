@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-echo 'bfrontend.com' > CNAME
+echo 'gitpages.bfrontend.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
@@ -27,7 +27,10 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
 # deploy to coding pages
-# echo 'www.bfrontend.com\nbfrontend.com' > CNAME  # 自定义域名
+echo 'bfrontend.com' > CNAME  # 自定义域名
+git add -A
+git commit -m "deploy"
+git push -f git@e.coding.net:webxmsj-01/webxmsj-blog/webxmsj.git master
 
 cd -
 rm -rf docs/.vuepress/dist

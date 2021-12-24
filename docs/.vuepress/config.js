@@ -41,8 +41,7 @@ module.exports = {
         link: '/more/',
         items: [
           { text: '生活', link: '/pages/e60c81/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          // { text: '友情链接', link: '/friends/' },
+          { text: '实用技巧', link: '/pages/baaa02/' }
         ],
       },
       { text: '关于', link: '/about/' },
@@ -154,7 +153,8 @@ module.exports = {
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: 'code-VAT67ToCtL' }], // 百度统计的站长验证（你可以去掉）
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover' }],
+    ['meta', { name: 'baidu-site-verification', content: 'code-VAT67ToCtL' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   ],
 
@@ -189,9 +189,9 @@ module.exports = {
       'one-click-copy', // 代码块复制按钮
       {
         copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-        copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
-        duration: 1000, // prompt message display time.
-        showInMobile: false, // whether to display on the mobile side, default: false.
+        copyMessage: '复制成功',
+        duration: 1000,
+        showInMobile: false,
       },
     ],
 
@@ -218,7 +218,7 @@ module.exports = {
       },
     ],
     [
-      'vuepress-plugin-baidu-tongji', // 百度统计 （你可以去掉）
+      'vuepress-plugin-baidu-tongji', // 百度统计
       {
         hm: baiduCode || '9e70dcc70564c849c1ddb4661b63b5b4',
       },
