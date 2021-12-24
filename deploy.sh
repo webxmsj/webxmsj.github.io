@@ -31,7 +31,7 @@ echo 'bfrontend.com' > CNAME  # 自定义域名
 if [ -z "$CODING_TOKEN" ]; then
   codingUrl=git@e.coding.net:webxmsj-01/webxmsj-blog/webxmsj.git
 else
-  codingUrl=https://HmuzsGrGQX:${CODING_TOKEN}@e.coding.net/webxmsj-01/webxmsj-blog/webxmsj.git
+  codingUrl=https://zXeMBYHXuv:${CODING_TOKEN}@e.coding.net/webxmsj-01/webxmsj-blog/webxmsj.git
 fi
 git add -A
 git commit -m "deploy"
