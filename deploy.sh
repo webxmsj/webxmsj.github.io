@@ -36,7 +36,7 @@ else
 fi
 git add -A
 git commit -m "deploy"
-git push -f $codingUrl master:master
+git push -f $codingUrl master
 
 cd -
 rm -rf docs/.vuepress/dist
