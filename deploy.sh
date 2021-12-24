@@ -30,7 +30,7 @@ git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 echo 'bfrontend.com' > CNAME  # 自定义域名
 git add -A
 git commit -m "deploy"
-git push -f git@e.coding.net:webxmsj-01/webxmsj-blog/webxmsj.git master
+git push -f git@e.coding.net:webxmsj-01/webxmsj-blog/webxmsj.git master:master
 
 cd -
 rm -rf docs/.vuepress/dist
