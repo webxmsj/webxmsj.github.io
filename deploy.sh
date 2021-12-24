@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-echo 'blog.bfrontend.com' > CNAME
+# echo 'blog.bfrontend.com' > CNAME
 
 # if [ -z "$GITHUB_TOKEN" ]; then
 #   msg='deploy'
@@ -30,13 +30,15 @@ echo 'blog.bfrontend.com' > CNAME
 echo 'bfrontend.com' > CNAME  # 自定义域名
 CODING_TOKEN=d75ea96df6a028e96f341d66319098d4cd80605f
 if [ -z "$CODING_TOKEN" ]; then
+  codingMsg='deploy'
   codingUrl=git@e.coding.net:webxmsj-01/webxmsj-blog/webxmsj.git
 else
+  codingMsg='来自github actions的自动部署'
   codingUrl=https://zXeMBYHXuv:${CODING_TOKEN}@e.coding.net/webxmsj-01/webxmsj-blog/webxmsj.git
 fi
 git add -A
-git commit -m "deploy"
-git push -f $codingUrl master
+git commit -m "${codingMsg}"
+git push -f $codingUrl master:master
 
 cd -
 rm -rf docs/.vuepress/dist
