@@ -136,7 +136,7 @@ module.exports = {
     footer: {
       createYear: 2021, // 博客创建年份
       copyrightInfo:
-        'webxmsj | <a href="https://github.com/webxmsj/webxmsj-blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+        'webxmsj | <a rel="noreferrer" href="https://github.com/webxmsj/webxmsj-blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     },
 
     // 插入hmtl(广告)模块
@@ -153,7 +153,7 @@ module.exports = {
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1.0,maximum-scale=5,viewport-fit=cover' }],
     ['meta', { name: 'baidu-site-verification', content: 'code-VAT67ToCtL' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   ],

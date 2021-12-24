@@ -6,6 +6,7 @@
     <div class="icons" v-if="social && social.icons && social.icons.length">
       <a
         v-for="(item, index) in social.icons"
+        rel="noreferrer"
         :key="index"
         :href="item.link"
         :title="item.title"

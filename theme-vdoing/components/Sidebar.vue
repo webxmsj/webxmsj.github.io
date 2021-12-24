@@ -18,6 +18,7 @@
             :class="['iconfont', item.iconClass]"
             v-for="(item, index) in blogger.social.icons"
             :key="index"
+            rel="noreferrer"
             target="_blank"
           ></a>
         </div>

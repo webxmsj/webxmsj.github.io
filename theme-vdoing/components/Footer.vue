@@ -5,6 +5,7 @@
       v-if="social && social.icons"
     >
       <a
+        rel="noreferrer"
         :href="item.link"
         :title="item.title"
         :class="['iconfont', item.iconClass]"
