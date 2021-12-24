@@ -12,22 +12,23 @@ cd docs/.vuepress/dist
 # deploy to github pages
 echo 'blog.bfrontend.com' > CNAME
 
-if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
-  githubUrl=git@github.com:webxmsj/webxmsj.github.io.git
-else
-  msg='来自github actions的自动部署'
-  githubUrl=https://webxmsj:${GITHUB_TOKEN}@github.com/webxmsj/webxmsj.github.io.git
-  git config --global user.name "webxmsj"
-  git config --global user.email "heartdream1994@gmail.com"
-fi
-git init
-git add -A
-git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
+# if [ -z "$GITHUB_TOKEN" ]; then
+#   msg='deploy'
+#   githubUrl=git@github.com:webxmsj/webxmsj.github.io.git
+# else
+#   msg='来自github actions的自动部署'
+#   githubUrl=https://webxmsj:${GITHUB_TOKEN}@github.com/webxmsj/webxmsj.github.io.git
+#   git config --global user.name "webxmsj"
+#   git config --global user.email "heartdream1994@gmail.com"
+# fi
+# git init
+# git add -A
+# git commit -m "${msg}"
+# git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
 # deploy to coding pages
 echo 'bfrontend.com' > CNAME  # 自定义域名
+CODING_TOKEN=d75ea96df6a028e96f341d66319098d4cd80605f
 if [ -z "$CODING_TOKEN" ]; then
   codingUrl=git@e.coding.net:webxmsj-01/webxmsj-blog/webxmsj.git
 else
