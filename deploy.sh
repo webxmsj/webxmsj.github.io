@@ -4,7 +4,8 @@
 set -e
 
 # 生成静态文件
-ls
+path=$(pwd)
+echo "$path"
 # npm run build
 
 # 进入生成的文件夹
