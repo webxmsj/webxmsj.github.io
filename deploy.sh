@@ -41,4 +41,4 @@ git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 # git push -f $codingUrl master:master
 
 cd -
-rm -rf docs/.vuepress/dist
+# rm -rf docs/.vuepress/dist
