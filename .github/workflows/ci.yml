@@ -32,6 +32,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout # 步骤1
+        uses: actions/checkout@v1
       - name: build github pages
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
@@ -61,7 +63,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: easingthemes/ssh-deploy@main
+      - name: Checkout # 步骤1
+        uses: actions/checkout@v1
+      - name: deploy to server
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-rltgoDzvO"
