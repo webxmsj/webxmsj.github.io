@@ -9,7 +9,7 @@
       <div
         class="banner-conent"
         :style="
-          !homeData.features && !homeData.heroImage && `padding-top: 7rem`
+          !homeData.features && !homeData.heroImage && `padding-top: 5rem`
         "
       >
         <header class="hero">
@@ -340,7 +340,7 @@ export default {
 .home-wrapper
   .banner
     width 100%
-    min-height 450px
+    min-height 360px
     margin-top $navbarHeight
     color $bannerTextColor
     position relative
