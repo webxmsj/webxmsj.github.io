@@ -22,6 +22,7 @@ module.exports = {
             text: '前端文章',
             items: [
               { text: 'JavaScript', link: '/pages/9712f3/' },
+              { text: 'typescript', link: '/pages/7d0c32/' },
             ],
           },
           {
