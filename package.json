@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "vuepress-plugin-comment": "^0.7.3"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
